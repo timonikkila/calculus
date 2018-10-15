@@ -1,0 +1,11 @@
+language: python
+python:
+- '3.6'
+install:
+- pip install -r requirements.txt
+script: pytest
+deploy:
+  provider: heroku
+  app: simplecalculus
+  api_key:
+    secure: "Eya/Q2FzSx6ZewaEp01j4mAsQh3h4KuU6JE+HfltaWX4qTPtSleY/6WJYiG/PCczPB7FbnCQzZrAJggNrI7tckXKtMTJq8V2NA2vQXNb/6Q/eO3vczqZNy/ITWauKg6ysvu/z+doY+XqajiJgZyYm2xxGyMExw3PLAxX2MbI4eLWutsu0Nl46x17YTK+520RpGcpoBbTu0LT0kO9CefSfu+Tbhg95HHXjkB5t79J+Pw9frJT9AtkCQFXt+BhBuXxnC1QsiMyrnmJiPMzL25PMYgJ6muCLquUOBg2X1etr1fmazQvUKSJwHHD0+jdaUkVB4XjcZxhzwy8ZQlfDJAuV0rcJHF8lud8T8NC6lgXpkRLzAhUZUmbAni5fRmgFzBibiWVszjI2baHTSu+0dBLqMwUgNbK+TQ2Szfngy7FRKxG05Ea7ecQ/n+jQxTCn6/0d6sv4MH1H+anXmXgqYQx+McrVMtT7pcGGe5iOIHwA8X3MsDVNJL9InJd+zasm4SE2qdSNIi4xHA/xAhqVa0Zu7UaxriLTG4wX6+SzdeoUqtk0YaXCDuwD4VjZ/O4Ggp3R7mGSC5xy7LfygQqSB/Q7xmVBYUDHFYCytnqfCt6+nPU6n20W3GbitRua5tWYvcuwx/w/hnNMvM8F1WFlVrEgCGLR9r9Um0rwkPn9Gh2C3E="
