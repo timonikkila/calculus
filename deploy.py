@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "<h1> testaus 9 </h1>"
+    return "<h1> testaus 10 </h1>"
 
 @app.route('/calculus', methods=['GET'])
 def getCalculus():
