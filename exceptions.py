@@ -3,4 +3,4 @@ class InvalidParam(Exception):
         Exception.__init__(self)
         self.message = message
     def to_dict(self):
-        return {'message': self.message, 'error': True}
+        return {'message': self.message}
